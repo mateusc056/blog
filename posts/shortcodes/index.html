@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+  <title>
+   Shortcodes Samples
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/css/layouts/main.css" rel="stylesheet"/>
+  <link href="/css/navigators/navbar.css" rel="stylesheet"/>
+  <link href="/css/plyr.css" rel="stylesheet"/>
+  <link href="/css/flag-icon.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet"/>
+  <link href="/fontawesome/css/all.min.css" rel="stylesheet"/>
+  <link href="/images/site/favicon_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png" rel="icon" type="image/png"/>
+  <meta content="Shortcodes Samples" property="og:title"/>
+  <meta content="Shortcodes sample" property="og:description"/>
+  <meta content="article" property="og:type"/>
+  <meta content="https://hugo-toha.github.io/posts/shortcodes/" property="og:url"/>
+  <meta content="posts" property="article:section"/>
+  <meta content="2020-06-08T08:06:25+06:00" property="article:published_time"/>
+  <meta content="2020-06-08T08:06:25+06:00" property="article:modified_time"/>
+  <meta content="Shortcodes sample" name="description"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css" rel="stylesheet"/>
+  <link href="/css/layouts/single.css" rel="stylesheet"/>
+  <link href="/css/navigators/sidebar.css" rel="stylesheet"/>
+  <link href="/css/style.css" rel="stylesheet"/>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H4LBG7NDFZ">
+  </script>
+  <script>
+   var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-H4LBG7NDFZ",{anonymize_ip:!1})}
+  </script>
+ </head>
+ <body data-offset="80" data-spy="scroll" data-target="#TableOfContents">
+  <div class="container-fluid bg-dimmed wrapper">
+   <nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+    <div class="container">
+     <button class="navbar-toggler navbar-light" id="sidebar-toggler" onclick="toggleSidebar()" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <a class="navbar-brand" href="/">
+      <img alt="Logo" src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png"/>
+      Blog do Mateus
+     </a>
+     <button class="navbar-toggler navbar-light" id="toc-toggler" onclick="toggleTOC()" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+       <li class="nav-item dropdown">
+        <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="languageSelector" role="button">
+         <span class="flag-icon flag-icon-gb">
+         </span>
+         English
+        </a>
+        <div aria-labelledby="languageSelector" class="dropdown-menu">
+         <a class="dropdown-item nav-link languages-item" href="/bn/posts/shortcodes">
+          <span class="flag-icon flag-icon-bd">
+          </span>
+          বাংলা
+         </a>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <img alt="Logo" class="d-none" id="main-logo" src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png"/>
+    <img alt="Inverted Logo" class="d-none" id="inverted-logo" src="/images/site/inverted-logo_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png"/>
+   </nav>
+   <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+     <div class="sidebar" id="sidebar">
+      <form action="/search" class="mx-auto" method="get">
+       <input data-search="" id="search-box" name="keyword" placeholder="Search" type="text"/>
+      </form>
+      <div class="sidebar-tree">
+       <ul class="tree" id="tree">
+        <li id="list-heading">
+         <a data-filter="all" href="/posts">
+          Postagens
+         </a>
+        </li>
+        <div class="subtree">
+         <li>
+          <a href="/posts/introduction/" title="Introduction">
+           Introdução
+          </a>
+         </li>
+         <li>
+          <i class="fas fa-plus-circle">
+          </i>
+          <a href="/posts/category/">
+           Categoria
+          </a>
+          <ul>
+           <li>
+            <i class="fas fa-plus-circle">
+            </i>
+            <a href="/posts/category/sub-category/">
+             Sub-categoria
+            </a>
+            <ul>
+             <li>
+              <a href="/posts/category/sub-category/rich-content/" title="Rich Content">
+               Rich Content
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <a href="/posts/markdown-sample/" title="Markdown Sample">
+           Markdown Sample
+          </a>
+         </li>
+         <li>
+          <a class="active" href="/posts/shortcodes/" title="Shortcodes Sample">
+           Shortcodes Sample
+          </a>
+         </li>
+        </div>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="content-section" id="content-section">
+    <div class="content">
+     <div class="container p-0 read-area">
+      <div class="hero-area col-sm-12" id="hero-area" style="background-image:url(https://hugo-toha.github.io/posts/shortcodes/boat.jpg)">
+      </div>
+      <div class="page-content">
+       <div class="author-profile ml-auto align-self-lg-center">
+        <img alt="Author Image" class="rounded-circle" src="/images/author/profile.png"/>
+        <h5 class="author-name">
+         Mateus Coimbra da Silva
+        </h5>
+        <p>
+         Monday, June 8, 2020
+        </p>
+       </div>
+       <div class="title">
+        <h1>
+         Shortcodes Samples
+        </h1>
+       </div>
+       <div class="taxonomy-terms">
+        <ul>
+        </ul>
+       </div>
+       <div class="post-content" id="post-content">
+        <p>
+         This is a sample post intended to test the followings:
+        </p>
+        <ul>
+         <li>
+          Default hero image.
+         </li>
+         <li>
+          Different shortcodes.
+         </li>
+        </ul>
+        <h2 id="alert">
+         Alert
+        </h2>
+        <p>
+         The following alerts are available in this theme.
+        </p>
+        <div class="alert alert-success">
+         <strong>
+          This is sample alert with
+          <code>
+           type="success"
+          </code>
+          .
+         </strong>
+        </div>
+        <div class="alert alert-danger">
+         <strong>
+          This is sample alert with
+          <code>
+           type="danger"
+          </code>
+          .
+         </strong>
+        </div>
+        <div class="alert alert-warning">
+         <strong>
+          This is sample alert with
+          <code>
+           type="warning"
+          </code>
+          .
+         </strong>
+        </div>
+        <div class="alert alert-info">
+         <strong>
+          This is sample alert with
+          <code>
+           type="info"
+          </code>
+          .
+         </strong>
+        </div>
+        <div class="alert alert-dark">
+         <strong>
+          This is sample alert with
+          <code>
+           type="dark"
+          </code>
+          .
+         </strong>
+        </div>
+        <div class="alert alert-primary">
+         <strong>
+          This is sample alert with
+          <code>
+           type="primary"
+          </code>
+          .
+         </strong>
+        </div>
+        <div class="alert alert-secondary">
+         <strong>
+          This is sample alert with
+          <code>
+           type="secondary"
+          </code>
+          .
+         </strong>
+        </div>
+        <h2 id="image">
+         Image
+        </h2>
+        <h4 id="a-sample-image-without-any-attribute">
+         A sample image without any attribute.
+        </h4>
+        <img alt="A boat at the sea" src="/posts/shortcodes/boat.jpg"/>
+        <div style="margin-top:3rem">
+        </div>
+        <h4 id="a-sample-image-with-height-and-width-attributes">
+         A sample image with
+         <code>
+          height
+         </code>
+         and
+         <code>
+          width
+         </code>
+         attributes.
+        </h4>
+        <img alt="A boat at the sea" height="400" src="/posts/shortcodes/boat.jpg" width="600"/>
+        <div style="margin-top:3rem">
+        </div>
+        <h4 id="a-center-aligned-image-with-height-and-width-attributes">
+         A center aligned image with
+         <code>
+          height
+         </code>
+         and
+         <code>
+          width
+         </code>
+         attributes.
+        </h4>
+        <img alt="A boat at the sea" class="center" height="400" src="/posts/shortcodes/boat.jpg" width="600"/>
+        <div style="margin-top:3rem">
+        </div>
+        <h4 id="a-image-with-float-attribute">
+         A image with
+         <code>
+          float
+         </code>
+         attribute.
+        </h4>
+        <img alt="A boat at the sea" height="200" src="/posts/shortcodes/boat.jpg" style="float:right" width="500"/>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies. Praesent tellus risus, eleifend vel efficitur ac, venenatis sit amet sem. Ut ut egestas erat. Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat. Suspendisse nec ipsum eu erat finibus dictum. Morbi volutpat nulla purus, vel maximus ex molestie id. Nullam posuere est urna, at fringilla eros venenatis quis.
+        </p>
+        <p>
+         Fusce vulputate dolor augue, ut porta sapien fringilla nec. Vivamus commodo erat felis, a sodales lectus finibus nec. In a pulvinar orci. Maecenas suscipit eget lorem non pretium. Nulla aliquam a augue nec blandit. Curabitur ac urna iaculis, ornare ligula nec, placerat nulla. Maecenas aliquam nisi vitae tempus vulputate.
+        </p>
+        <h2 id="split">
+         Split
+        </h2>
+        <p>
+         This theme support splitting the page into as many columns as you wish.
+        </p>
+        <h4 id="two-column-split">
+         Two column split
+        </h4>
+        <div class="row">
+         <div class="col col-sm-12 col-lg-6">
+          <h5 id="left-column">
+           Left Column
+          </h5>
+          <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies.
+          </p>
+         </div>
+         <div class="col col-sm-12 col-lg-6">
+          <h5 id="right-column">
+           Right Column
+          </h5>
+          <p>
+           Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat.
+          </p>
+         </div>
+        </div>
+        <h4 id="three-column-split">
+         Three column split
+        </h4>
+        <div class="row">
+         <div class="col col-sm-12 col-lg-4">
+          <h5 id="left-column">
+           Left Column
+          </h5>
+          <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies.
+          </p>
+         </div>
+         <div class="col col-sm-12 col-lg-4">
+          <h5 id="middle-column">
+           Middle Column
+          </h5>
+          <p>
+           Aenean dignissim dictum ex. Donec a nunc vel nibh placerat interdum.
+          </p>
+         </div>
+         <div class="col col-sm-12 col-lg-4">
+          <h5 id="right-column">
+           Right Column
+          </h5>
+          <p>
+           Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat.
+          </p>
+         </div>
+        </div>
+        <h2 id="vertical-space">
+         Vertical Space
+        </h2>
+        <p>
+         Give vertical space between two lines.
+        </p>
+        <p>
+         This is line one.
+        </p>
+        <div style="margin-top:4rem">
+        </div>
+        This is line two. It should have
+        <code>
+         4rem
+        </code>
+        vertical space with previous line.
+        <h2 id="video">
+         Video
+        </h2>
+        <video class="video-player" controls="" id="video-93" playsinline="">
+         <source src="/videos/sample.mp4" type="video/mp4"/>
+        </video>
+        <p>
+         Video by
+         <a href="https://www.pexels.com/@rahul-sharma-493988">
+          Rahul Sharma
+         </a>
+         from
+         <a href="https://www.pexels.com">
+          Pexels
+         </a>
+         .
+        </p>
+        <h2 id="mermaid">
+         Mermaid
+        </h2>
+        <p>
+         Here, are few example of mermaid shortcode.
+        </p>
+        <p>
+         <strong>
+          Graph:
+         </strong>
+        </p>
+        <div align="left" class="mermaid" style="background-color:none;border-radius:5px">
+         <svg height="154" id="mermaid-1650876355411" style="max-width: 667.0734252929688px;" viewbox="0 0 667.0734252929688 154" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <style>
+           #mermaid-1650876355411 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1650876355411 .error-icon{fill:#552222;}#mermaid-1650876355411 .error-text{fill:#552222;stroke:#552222;}#mermaid-1650876355411 .edge-thickness-normal{stroke-width:2px;}#mermaid-1650876355411 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1650876355411 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1650876355411 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1650876355411 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1650876355411 .marker{fill:#333333;stroke:#333333;}#mermaid-1650876355411 .marker.cross{stroke:#333333;}#mermaid-1650876355411 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1650876355411 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1650876355411 .cluster-label text{fill:#333;}#mermaid-1650876355411 .cluster-label span{color:#333;}#mermaid-1650876355411 .label text,#mermaid-1650876355411 span{fill:#333;color:#333;}#mermaid-1650876355411 .node rect,#mermaid-1650876355411 .node circle,#mermaid-1650876355411 .node ellipse,#mermaid-1650876355411 .node polygon,#mermaid-1650876355411 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1650876355411 .node .label{text-align:center;}#mermaid-1650876355411 .node.clickable{cursor:pointer;}#mermaid-1650876355411 .arrowheadPath{fill:#333333;}#mermaid-1650876355411 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1650876355411 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1650876355411 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1650876355411 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1650876355411 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1650876355411 .cluster text{fill:#333;}#mermaid-1650876355411 .cluster span{color:#333;}#mermaid-1650876355411 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1650876355411 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
+          </style>
+          <g>
+           <g class="output">
+            <g class="clusters">
+            </g>
+            <g class="edgePaths">
+             <g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;">
+              <path class="path" d="M102.71875,77L111.8515625,77C120.984375,77,139.25,77,157.515625,77C175.78125,77,194.046875,77,203.1796875,77L212.3125,77" marker-end="url(#arrowhead21)" style="fill:none">
+              </path>
+              <defs>
+               <marker id="arrowhead21" markerheight="6" markerunits="strokeWidth" markerwidth="8" orient="auto" refx="9" refy="5" viewbox="0 0 10 10">
+                <path class="arrowheadPath" d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;">
+                </path>
+               </marker>
+              </defs>
+             </g>
+             <g class="edgePath LS-B LE-C" id="L-B-C" style="opacity: 1;">
+              <path class="path" d="M319.5,77L323.6666666666667,77C327.8333333333333,77,336.1666666666667,77,344.58333358764645,77.08333333333333C353.00000050862633,77.16666666666667,361.5000010172527,77.33333333333333,365.75000127156585,77.41666666666667L370.000001525879,77.5" marker-end="url(#arrowhead22)" style="fill:none">
+              </path>
+              <defs>
+               <marker id="arrowhead22" markerheight="6" markerunits="strokeWidth" markerwidth="8" orient="auto" refx="9" refy="5" viewbox="0 0 10 10">
+                <path class="arrowheadPath" d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;">
+                </path>
+               </marker>
+              </defs>
+             </g>
+             <g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;">
+              <path class="path" d="M464.3518536632339,59.028414637355L474.03461814465453,54.19034553112917C483.7173826260752,49.35227642490333,503.0829115889165,39.67613821245167,519.4531760703371,34.83806910622584C535.8234405517578,30,549.1984405517578,30,555.8859405517578,30L562.5734405517578,30" marker-end="url(#arrowhead23)" style="fill:none">
+              </path>
+              <defs>
+               <marker id="arrowhead23" markerheight="6" markerunits="strokeWidth" markerwidth="8" orient="auto" refx="9" refy="5" viewbox="0 0 10 10">
+                <path class="arrowheadPath" d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;">
+                </path>
+               </marker>
+              </defs>
+             </g>
+             <g class="edgePath LS-C LE-E" id="L-C-E" style="opacity: 1;">
+              <path class="path" d="M464.35185161075077,95.97158436337033L474.034616434252,100.64298696947526C483.7173812577532,105.31438957558021,503.08291090475547,114.6571947877901,519.60291531159,119.32859739389505C536.1229197184244,124,549.7973988850912,124,556.6346384684244,124L563.4718780517578,124" marker-end="url(#arrowhead24)" style="fill:none">
+              </path>
+              <defs>
+               <marker id="arrowhead24" markerheight="6" markerunits="strokeWidth" markerwidth="8" orient="auto" refx="9" refy="5" viewbox="0 0 10 10">
+                <path class="arrowheadPath" d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;">
+                </path>
+               </marker>
+              </defs>
+             </g>
+            </g>
+            <g class="edgeLabels">
+             <g class="edgeLabel" style="opacity: 1;" transform="translate(157.515625,77)">
+              <g class="label" transform="translate(-29.796875,-12)">
+               <rect height="24" rx="0" ry="0" width="59.59375">
+               </rect>
+               <foreignobject height="24" width="59.59375">
+                <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml">
+                 <span class="edgeLabel L-LS-A' L-LE-B" id="L-L-A-B">
+                  Link text
+                 </span>
+                </div>
+               </foreignobject>
+              </g>
+             </g>
+             <g class="edgeLabel" style="opacity: 1;" transform="">
+              <g class="label" transform="translate(0,0)">
+               <rect height="0" rx="0" ry="0" width="0">
+               </rect>
+               <foreignobject height="0" width="0">
+                <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml">
+                 <span class="edgeLabel L-LS-B' L-LE-C" id="L-L-B-C">
+                 </span>
+                </div>
+               </foreignobject>
+              </g>
+             </g>
+             <g class="edgeLabel" style="opacity: 1;" transform="translate(522.4484405517578,30)">
+              <g class="label" transform="translate(-15.125,-12)">
+               <rect height="24" rx="0" ry="0" width="30.25">
+               </rect>
+               <foreignobject height="24" width="30.25">
+                <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml">
+                 <span class="edgeLabel L-LS-C' L-LE-D" id="L-L-C-D">
+                  One
+                 </span>
+                </div>
+               </foreignobject>
+              </g>
+             </g>
+             <g class="edgeLabel" style="opacity: 1;" transform="translate(522.4484405517578,124)">
+              <g class="label" transform="translate(-14.671875,-12)">
+               <rect height="24" rx="0" ry="0" width="29.34375">
+               </rect>
+               <foreignobject height="24" width="29.34375">
+                <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml">
+                 <span class="edgeLabel L-LS-C' L-LE-E" id="L-L-C-E">
+                  Two
+                 </span>
+                </div>
+               </foreignobject>
+              </g>
+             </g>
+            </g>
+            <g class="nodes">
+             <g class="node default" id="flowchart-A-8" style="opacity: 1;" transform="translate(55.359375,77)">
+              <rect class="label-container" height="44" rx="0" ry="0" width="94.71875" x="-47.359375" y="-22">
+              </rect>
+              <g class="label" transform="translate(0,0)">
+               <g transform="translate(-37.359375,-12)">
+                <foreignobject height="24" width="74.71875">
+                 <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml">
+                  Hard edge
+                 </div>
+                </foreignobject>
+               </g>
+              </g>
+             </g>
+             <g class="node default" id="flowchart-B-9" style="opacity: 1;" transform="translate(265.90625,77)">
+              <rect class="label-container" height="44" rx="5" ry="5" width="107.1875" x="-53.59375" y="-22">
+              </rect>
+              <g class="label" transform="translate(0,0)">
+               <g transform="translate(-43.59375,-12)">
+                <foreignobject height="24" width="87.1875">
+                 <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml">
+                  Round edge
+                 </div>
+                </foreignobject>
+               </g>
+              </g>
+             </g>
+             <g class="node default" id="flowchart-C-11" style="opacity: 1;" transform="translate(425.9117202758789,77)">
+              <polygon class="label-container" points="56.41171875,0 112.8234375,-56.41171875 56.41171875,-112.8234375 0,-56.41171875" transform="translate(-56.41171875,56.41171875)">
+              </polygon>
+              <g class="label" transform="translate(0,0)">
+               <g transform="translate(-30.6796875,-12)">
+                <foreignobject height="24" width="61.359375">
+                 <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml">
+                  Decision
+                 </div>
+                </foreignobject>
+               </g>
+              </g>
+             </g>
+             <g class="node default" id="flowchart-D-13" style="opacity: 1;" transform="translate(610.8234405517578,30)">
+              <rect class="label-container" height="44" rx="0" ry="0" width="96.5" x="-48.25" y="-22">
+              </rect>
+              <g class="label" transform="translate(0,0)">
+               <g transform="translate(-38.25,-12)">
+                <foreignobject height="24" width="76.5">
+                 <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml">
+                  Result one
+                 </div>
+                </foreignobject>
+               </g>
+              </g>
+             </g>
+             <g class="node default" id="flowchart-E-15" style="opacity: 1;" transform="translate(610.8234405517578,124)">
+              <rect class="label-container" height="44" rx="0" ry="0" width="94.703125" x="-47.3515625" y="-22">
+              </rect>
+              <g class="label" transform="translate(0,0)">
+               <g transform="translate(-37.3515625,-12)">
+                <foreignobject height="24" width="74.703125">
+                 <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml">
+                  Result two
+                 </div>
+                </foreignobject>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </svg>
+        </div>
+        <p>
+         <strong>
+          Sequence Diagram:
+         </strong>
+        </p>
+        <div align="center" class="mermaid" data-processed="true" style="background-color:none;border-radius:5px">
+                <svg height="568" id="mermaid-1652551900185" style="max-width: 750px;" viewbox="-50 -10 750 568" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <style>
+                   #mermaid-1652551900185 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}
+                   #mermaid-1652551900185 .error-icon{fill:#552222;}
+                   #mermaid-1652551900185 .error-text{fill:#552222;stroke:#552222;}
+                   #mermaid-1652551900185 .edge-thickness-normal{stroke-width:2px;}
+                   #mermaid-1652551900185 .edge-thickness-thick{stroke-width:3.5px;}
+                   #mermaid-1652551900185 .edge-pattern-solid{stroke-dasharray:0;}
+                   #mermaid-1652551900185 .edge-pattern-dashed{stroke-dasharray:3;}
+                   #mermaid-1652551900185 .edge-pattern-dotted{stroke-dasharray:2;}
+                   #mermaid-1652551900185 .marker{fill:#333333;stroke:#333333;}
+                   #mermaid-1652551900185 .marker.cross{stroke:#333333;}
+                   #mermaid-1652551900185 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}
+                   #mermaid-1652551900185 .actor{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;}
+                   #mermaid-1652551900185 text.actor&gt;tspan{fill:black;stroke:none;}
+                   #mermaid-1652551900185 .actor-line{stroke:grey;}
+                   #mermaid-1652551900185 .messageLine0{stroke-width:1.5;stroke-dasharray:none;stroke:#333;}
+                   #mermaid-1652551900185 .messageLine1{stroke-width:1.5;stroke-dasharray:2,2;stroke:#333;}
+                   #mermaid-1652551900185 #arrowhead path{fill:#333;stroke:#333;}
+                   #mermaid-1652551900185 .sequenceNumber{fill:white;}
+                   #mermaid-1652551900185 #sequencenumber{fill:#333;}
+                   #mermaid-1652551900185 #crosshead path{fill:#333;stroke:#333;}
+                   #mermaid-1652551900185 .messageText{fill:#333;stroke:#333;}
+                   #mermaid-1652551900185 .labelBox{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;}
+                   #mermaid-1652551900185 .labelText,#mermaid-1652551900185 .labelText&gt;tspan{fill:black;stroke:none;}
+                   #mermaid-1652551900185 .loopText,#mermaid-1652551900185 .loopText&gt;tspan{fill:black;stroke:none;}#mermaid-1652551900185 .loopLine{stroke-width:2px;stroke-dasharray:2,2;stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);}#mermaid-1652551900185 .note{stroke:#aaaa33;fill:#fff5ad;}#mermaid-1652551900185 .noteText,#mermaid-1652551900185 .noteText&gt;tspan{fill:black;stroke:none;}#mermaid-1652551900185 .activation0{fill:#f4f4f4;stroke:#666;}#mermaid-1652551900185 .activation1{fill:#f4f4f4;stroke:#666;}#mermaid-1652551900185 .activation2{fill:#f4f4f4;stroke:#666;}#mermaid-1652551900185 .actorPopupMenu{position:absolute;}#mermaid-1652551900185 .actorPopupMenuPanel{position:absolute;fill:#ECECFF;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);filter:drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));}#mermaid-1652551900185 .actor-man line{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;}#mermaid-1652551900185 .actor-man circle,#mermaid-1652551900185 line{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;stroke-width:2px;}#mermaid-1652551900185 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
+                 </style>
+                 <g>
+                 </g>
+                 <defs>
+                  <symbol height="24" id="computer" width="24">
+                   <path d="M2 2v13h20v-13h-20zm18 11h-16v-9h16v9zm-10.228 6l.466-1h3.524l.467 1h-4.457zm14.228 3h-24l2-6h2.104l-1.33 4h18.45l-1.297-4h2.073l2 6zm-5-10h-14v-7h14v7z" transform="scale(.5)">
+                   </path>
+                  </symbol>
+                 </defs>
+                 <defs>
+                  <symbol clip-rule="evenodd" fill-rule="evenodd" id="database">
+                   <path d="M12.258.001l.256.004.255.005.253.008.251.01.249.012.247.015.246.016.242.019.241.02.239.023.236.024.233.027.231.028.229.031.225.032.223.034.22.036.217.038.214.04.211.041.208.043.205.045.201.046.198.048.194.05.191.051.187.053.183.054.18.056.175.057.172.059.168.06.163.061.16.063.155.064.15.066.074.033.073.033.071.034.07.034.069.035.068.035.067.035.066.035.064.036.064.036.062.036.06.036.06.037.058.037.058.037.055.038.055.038.053.038.052.038.051.039.05.039.048.039.047.039.045.04.044.04.043.04.041.04.04.041.039.041.037.041.036.041.034.041.033.042.032.042.03.042.029.042.027.042.026.043.024.043.023.043.021.043.02.043.018.044.017.043.015.044.013.044.012.044.011.045.009.044.007.045.006.045.004.045.002.045.001.045v17l-.001.045-.002.045-.004.045-.006.045-.007.045-.009.044-.011.045-.012.044-.013.044-.015.044-.017.043-.018.044-.02.043-.021.043-.023.043-.024.043-.026.043-.027.042-.029.042-.03.042-.032.042-.033.042-.034.041-.036.041-.037.041-.039.041-.04.041-.041.04-.043.04-.044.04-.045.04-.047.039-.048.039-.05.039-.051.039-.052.038-.053.038-.055.038-.055.038-.058.037-.058.037-.06.037-.06.036-.062.036-.064.036-.064.036-.066.035-.067.035-.068.035-.069.035-.07.034-.071.034-.073.033-.074.033-.15.066-.155.064-.16.063-.163.061-.168.06-.172.059-.175.057-.18.056-.183.054-.187.053-.191.051-.194.05-.198.048-.201.046-.205.045-.208.043-.211.041-.214.04-.217.038-.22.036-.223.034-.225.032-.229.031-.231.028-.233.027-.236.024-.239.023-.241.02-.242.019-.246.016-.247.015-.249.012-.251.01-.253.008-.255.005-.256.004-.258.001-.258-.001-.256-.004-.255-.005-.253-.008-.251-.01-.249-.012-.247-.015-.245-.016-.243-.019-.241-.02-.238-.023-.236-.024-.234-.027-.231-.028-.228-.031-.226-.032-.223-.034-.22-.036-.217-.038-.214-.04-.211-.041-.208-.043-.204-.045-.201-.046-.198-.048-.195-.05-.19-.051-.187-.053-.184-.054-.179-.056-.176-.057-.172-.059-.167-.06-.164-.061-.159-.063-.155-.064-.151-.066-.074-.033-.072-.033-.072-.034-.07-.034-.069-.035-.068-.035-.067-.035-.066-.035-.064-.036-.063-.036-.062-.036-.061-.036-.06-.037-.058-.037-.057-.037-.056-.038-.055-.038-.053-.038-.052-.038-.051-.039-.049-.039-.049-.039-.046-.039-.046-.04-.044-.04-.043-.04-.041-.04-.04-.041-.039-.041-.037-.041-.036-.041-.034-.041-.033-.042-.032-.042-.03-.042-.029-.042-.027-.042-.026-.043-.024-.043-.023-.043-.021-.043-.02-.043-.018-.044-.017-.043-.015-.044-.013-.044-.012-.044-.011-.045-.009-.044-.007-.045-.006-.045-.004-.045-.002-.045-.001-.045v-17l.001-.045.002-.045.004-.045.006-.045.007-.045.009-.044.011-.045.012-.044.013-.044.015-.044.017-.043.018-.044.02-.043.021-.043.023-.043.024-.043.026-.043.027-.042.029-.042.03-.042.032-.042.033-.042.034-.041.036-.041.037-.041.039-.041.04-.041.041-.04.043-.04.044-.04.046-.04.046-.039.049-.039.049-.039.051-.039.052-.038.053-.038.055-.038.056-.038.057-.037.058-.037.06-.037.061-.036.062-.036.063-.036.064-.036.066-.035.067-.035.068-.035.069-.035.07-.034.072-.034.072-.033.074-.033.151-.066.155-.064.159-.063.164-.061.167-.06.172-.059.176-.057.179-.056.184-.054.187-.053.19-.051.195-.05.198-.048.201-.046.204-.045.208-.043.211-.041.214-.04.217-.038.22-.036.223-.034.226-.032.228-.031.231-.028.234-.027.236-.024.238-.023.241-.02.243-.019.245-.016.247-.015.249-.012.251-.01.253-.008.255-.005.256-.004.258-.001.258.001zm-9.258 20.499v.01l.001.021.003.021.004.022.005.021.006.022.007.022.009.023.01.022.011.023.012.023.013.023.015.023.016.024.017.023.018.024.019.024.021.024.022.025.023.024.024.025.052.049.056.05.061.051.066.051.07.051.075.051.079.052.084.052.088.052.092.052.097.052.102.051.105.052.11.052.114.051.119.051.123.051.127.05.131.05.135.05.139.048.144.049.147.047.152.047.155.047.16.045.163.045.167.043.171.043.176.041.178.041.183.039.187.039.19.037.194.035.197.035.202.033.204.031.209.03.212.029.216.027.219.025.222.024.226.021.23.02.233.018.236.016.24.015.243.012.246.01.249.008.253.005.256.004.259.001.26-.001.257-.004.254-.005.25-.008.247-.011.244-.012.241-.014.237-.016.233-.018.231-.021.226-.021.224-.024.22-.026.216-.027.212-.028.21-.031.205-.031.202-.034.198-.034.194-.036.191-.037.187-.039.183-.04.179-.04.175-.042.172-.043.168-.044.163-.045.16-.046.155-.046.152-.047.148-.048.143-.049.139-.049.136-.05.131-.05.126-.05.123-.051.118-.052.114-.051.11-.052.106-.052.101-.052.096-.052.092-.052.088-.053.083-.051.079-.052.074-.052.07-.051.065-.051.06-.051.056-.05.051-.05.023-.024.023-.025.021-.024.02-.024.019-.024.018-.024.017-.024.015-.023.014-.024.013-.023.012-.023.01-.023.01-.022.008-.022.006-.022.006-.022.004-.022.004-.021.001-.021.001-.021v-4.127l-.077.055-.08.053-.083.054-.085.053-.087.052-.09.052-.093.051-.095.05-.097.05-.1.049-.102.049-.105.048-.106.047-.109.047-.111.046-.114.045-.115.045-.118.044-.12.043-.122.042-.124.042-.126.041-.128.04-.13.04-.132.038-.134.038-.135.037-.138.037-.139.035-.142.035-.143.034-.144.033-.147.032-.148.031-.15.03-.151.03-.153.029-.154.027-.156.027-.158.026-.159.025-.161.024-.162.023-.163.022-.165.021-.166.02-.167.019-.169.018-.169.017-.171.016-.173.015-.173.014-.175.013-.175.012-.177.011-.178.01-.179.008-.179.008-.181.006-.182.005-.182.004-.184.003-.184.002h-.37l-.184-.002-.184-.003-.182-.004-.182-.005-.181-.006-.179-.008-.179-.008-.178-.01-.176-.011-.176-.012-.175-.013-.173-.014-.172-.015-.171-.016-.17-.017-.169-.018-.167-.019-.166-.02-.165-.021-.163-.022-.162-.023-.161-.024-.159-.025-.157-.026-.156-.027-.155-.027-.153-.029-.151-.03-.15-.03-.148-.031-.146-.032-.145-.033-.143-.034-.141-.035-.14-.035-.137-.037-.136-.037-.134-.038-.132-.038-.13-.04-.128-.04-.126-.041-.124-.042-.122-.042-.12-.044-.117-.043-.116-.045-.113-.045-.112-.046-.109-.047-.106-.047-.105-.048-.102-.049-.1-.049-.097-.05-.095-.05-.093-.052-.09-.051-.087-.052-.085-.053-.083-.054-.08-.054-.077-.054v4.127zm0-5.654v.011l.001.021.003.021.004.021.005.022.006.022.007.022.009.022.01.022.011.023.012.023.013.023.015.024.016.023.017.024.018.024.019.024.021.024.022.024.023.025.024.024.052.05.056.05.061.05.066.051.07.051.075.052.079.051.084.052.088.052.092.052.097.052.102.052.105.052.11.051.114.051.119.052.123.05.127.051.131.05.135.049.139.049.144.048.147.048.152.047.155.046.16.045.163.045.167.044.171.042.176.042.178.04.183.04.187.038.19.037.194.036.197.034.202.033.204.032.209.03.212.028.216.027.219.025.222.024.226.022.23.02.233.018.236.016.24.014.243.012.246.01.249.008.253.006.256.003.259.001.26-.001.257-.003.254-.006.25-.008.247-.01.244-.012.241-.015.237-.016.233-.018.231-.02.226-.022.224-.024.22-.025.216-.027.212-.029.21-.03.205-.032.202-.033.198-.035.194-.036.191-.037.187-.039.183-.039.179-.041.175-.042.172-.043.168-.044.163-.045.16-.045.155-.047.152-.047.148-.048.143-.048.139-.05.136-.049.131-.05.126-.051.123-.051.118-.051.114-.052.11-.052.106-.052.101-.052.096-.052.092-.052.088-.052.083-.052.079-.052.074-.051.07-.052.065-.051.06-.05.056-.051.051-.049.023-.025.023-.024.021-.025.02-.024.019-.024.018-.024.017-.024.015-.023.014-.023.013-.024.012-.022.01-.023.01-.023.008-.022.006-.022.006-.022.004-.021.004-.022.001-.021.001-.021v-4.139l-.077.054-.08.054-.083.054-.085.052-.087.053-.09.051-.093.051-.095.051-.097.05-.1.049-.102.049-.105.048-.106.047-.109.047-.111.046-.114.045-.115.044-.118.044-.12.044-.122.042-.124.042-.126.041-.128.04-.13.039-.132.039-.134.038-.135.037-.138.036-.139.036-.142.035-.143.033-.144.033-.147.033-.148.031-.15.03-.151.03-.153.028-.154.028-.156.027-.158.026-.159.025-.161.024-.162.023-.163.022-.165.021-.166.02-.167.019-.169.018-.169.017-.171.016-.173.015-.173.014-.175.013-.175.012-.177.011-.178.009-.179.009-.179.007-.181.007-.182.005-.182.004-.184.003-.184.002h-.37l-.184-.002-.184-.003-.182-.004-.182-.005-.181-.007-.179-.007-.179-.009-.178-.009-.176-.011-.176-.012-.175-.013-.173-.014-.172-.015-.171-.016-.17-.017-.169-.018-.167-.019-.166-.02-.165-.021-.163-.022-.162-.023-.161-.024-.159-.025-.157-.026-.156-.027-.155-.028-.153-.028-.151-.03-.15-.03-.148-.031-.146-.033-.145-.033-.143-.033-.141-.035-.14-.036-.137-.036-.136-.037-.134-.038-.132-.039-.13-.039-.128-.04-.126-.041-.124-.042-.122-.043-.12-.043-.117-.044-.116-.044-.113-.046-.112-.046-.109-.046-.106-.047-.105-.048-.102-.049-.1-.049-.097-.05-.095-.051-.093-.051-.09-.051-.087-.053-.085-.052-.083-.054-.08-.054-.077-.054v4.139zm0-5.666v.011l.001.02.003.022.004.021.005.022.006.021.007.022.009.023.01.022.011.023.012.023.013.023.015.023.016.024.017.024.018.023.019.024.021.025.022.024.023.024.024.025.052.05.056.05.061.05.066.051.07.051.075.052.079.051.084.052.088.052.092.052.097.052.102.052.105.051.11.052.114.051.119.051.123.051.127.05.131.05.135.05.139.049.144.048.147.048.152.047.155.046.16.045.163.045.167.043.171.043.176.042.178.04.183.04.187.038.19.037.194.036.197.034.202.033.204.032.209.03.212.028.216.027.219.025.222.024.226.021.23.02.233.018.236.017.24.014.243.012.246.01.249.008.253.006.256.003.259.001.26-.001.257-.003.254-.006.25-.008.247-.01.244-.013.241-.014.237-.016.233-.018.231-.02.226-.022.224-.024.22-.025.216-.027.212-.029.21-.03.205-.032.202-.033.198-.035.194-.036.191-.037.187-.039.183-.039.179-.041.175-.042.172-.043.168-.044.163-.045.16-.045.155-.047.152-.047.148-.048.143-.049.139-.049.136-.049.131-.051.126-.05.123-.051.118-.052.114-.051.11-.052.106-.052.101-.052.096-.052.092-.052.088-.052.083-.052.079-.052.074-.052.07-.051.065-.051.06-.051.056-.05.051-.049.023-.025.023-.025.021-.024.02-.024.019-.024.018-.024.017-.024.015-.023.014-.024.013-.023.012-.023.01-.022.01-.023.008-.022.006-.022.006-.022.004-.022.004-.021.001-.021.001-.021v-4.153l-.077.054-.08.054-.083.053-.085.053-.087.053-.09.051-.093.051-.095.051-.097.05-.1.049-.102.048-.105.048-.106.048-.109.046-.111.046-.114.046-.115.044-.118.044-.12.043-.122.043-.124.042-.126.041-.128.04-.13.039-.132.039-.134.038-.135.037-.138.036-.139.036-.142.034-.143.034-.144.033-.147.032-.148.032-.15.03-.151.03-.153.028-.154.028-.156.027-.158.026-.159.024-.161.024-.162.023-.163.023-.165.021-.166.02-.167.019-.169.018-.169.017-.171.016-.173.015-.173.014-.175.013-.175.012-.177.01-.178.01-.179.009-.179.007-.181.006-.182.006-.182.004-.184.003-.184.001-.185.001-.185-.001-.184-.001-.184-.003-.182-.004-.182-.006-.181-.006-.179-.007-.179-.009-.178-.01-.176-.01-.176-.012-.175-.013-.173-.014-.172-.015-.171-.016-.17-.017-.169-.018-.167-.019-.166-.02-.165-.021-.163-.023-.162-.023-.161-.024-.159-.024-.157-.026-.156-.027-.155-.028-.153-.028-.151-.03-.15-.03-.148-.032-.146-.032-.145-.033-.143-.034-.141-.034-.14-.036-.137-.036-.136-.037-.134-.038-.132-.039-.13-.039-.128-.041-.126-.041-.124-.041-.122-.043-.12-.043-.117-.044-.116-.044-.113-.046-.112-.046-.109-.046-.106-.048-.105-.048-.102-.048-.1-.05-.097-.049-.095-.051-.093-.051-.09-.052-.087-.052-.085-.053-.083-.053-.08-.054-.077-.054v4.153zm8.74-8.179l-.257.004-.254.005-.25.008-.247.011-.244.012-.241.014-.237.016-.233.018-.231.021-.226.022-.224.023-.22.026-.216.027-.212.028-.21.031-.205.032-.202.033-.198.034-.194.036-.191.038-.187.038-.183.04-.179.041-.175.042-.172.043-.168.043-.163.045-.16.046-.155.046-.152.048-.148.048-.143.048-.139.049-.136.05-.131.05-.126.051-.123.051-.118.051-.114.052-.11.052-.106.052-.101.052-.096.052-.092.052-.088.052-.083.052-.079.052-.074.051-.07.052-.065.051-.06.05-.056.05-.051.05-.023.025-.023.024-.021.024-.02.025-.019.024-.018.024-.017.023-.015.024-.014.023-.013.023-.012.023-.01.023-.01.022-.008.022-.006.023-.006.021-.004.022-.004.021-.001.021-.001.021.001.021.001.021.004.021.004.022.006.021.006.023.008.022.01.022.01.023.012.023.013.023.014.023.015.024.017.023.018.024.019.024.02.025.021.024.023.024.023.025.051.05.056.05.06.05.065.051.07.052.074.051.079.052.083.052.088.052.092.052.096.052.101.052.106.052.11.052.114.052.118.051.123.051.126.051.131.05.136.05.139.049.143.048.148.048.152.048.155.046.16.046.163.045.168.043.172.043.175.042.179.041.183.04.187.038.191.038.194.036.198.034.202.033.205.032.21.031.212.028.216.027.22.026.224.023.226.022.231.021.233.018.237.016.241.014.244.012.247.011.25.008.254.005.257.004.26.001.26-.001.257-.004.254-.005.25-.008.247-.011.244-.012.241-.014.237-.016.233-.018.231-.021.226-.022.224-.023.22-.026.216-.027.212-.028.21-.031.205-.032.202-.033.198-.034.194-.036.191-.038.187-.038.183-.04.179-.041.175-.042.172-.043.168-.043.163-.045.16-.046.155-.046.152-.048.148-.048.143-.048.139-.049.136-.05.131-.05.126-.051.123-.051.118-.051.114-.052.11-.052.106-.052.101-.052.096-.052.092-.052.088-.052.083-.052.079-.052.074-.051.07-.052.065-.051.06-.05.056-.05.051-.05.023-.025.023-.024.021-.024.02-.025.019-.024.018-.024.017-.023.015-.024.014-.023.013-.023.012-.023.01-.023.01-.022.008-.022.006-.023.006-.021.004-.022.004-.021.001-.021.001-.021-.001-.021-.001-.021-.004-.021-.004-.022-.006-.021-.006-.023-.008-.022-.01-.022-.01-.023-.012-.023-.013-.023-.014-.023-.015-.024-.017-.023-.018-.024-.019-.024-.02-.025-.021-.024-.023-.024-.023-.025-.051-.05-.056-.05-.06-.05-.065-.051-.07-.052-.074-.051-.079-.052-.083-.052-.088-.052-.092-.052-.096-.052-.101-.052-.106-.052-.11-.052-.114-.052-.118-.051-.123-.051-.126-.051-.131-.05-.136-.05-.139-.049-.143-.048-.148-.048-.152-.048-.155-.046-.16-.046-.163-.045-.168-.043-.172-.043-.175-.042-.179-.041-.183-.04-.187-.038-.191-.038-.194-.036-.198-.034-.202-.033-.205-.032-.21-.031-.212-.028-.216-.027-.22-.026-.224-.023-.226-.022-.231-.021-.233-.018-.237-.016-.241-.014-.244-.012-.247-.011-.25-.008-.254-.005-.257-.004-.26-.001-.26.001z" transform="scale(.5)">
+                   </path>
+                  </symbol>
+                 </defs>
+                 <defs>
+                  <symbol height="24" id="clock" width="24">
+                   <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z" transform="scale(.5)">
+                   </path>
+                  </symbol>
+                 </defs>
+                 <g>
+                  <line class="200" id="actor0" stroke="#999" stroke-width="0.5px" x1="75" x2="75" y1="5" y2="502">
+                  </line>
+                  <g id="root-0">
+                   <rect class="actor" fill="#eaeaea" height="65" rx="3" ry="3" stroke="#666" width="150" x="0" y="0">
+                   </rect>
+                   <text alignment-baseline="central" class="actor" dominant-baseline="central" style='text-anchor: middle; font-size: 14px; font-weight: 400; font-family: Open-Sans, "sans-serif";' x="75" y="32.5">
+                    <tspan dy="0" x="75">
+                     Alice
+                    </tspan>
+                   </text>
+                  </g>
+                 </g>
+                 <g>
+                  <line class="200" id="actor1" stroke="#999" stroke-width="0.5px" x1="275" x2="275" y1="5" y2="502">
+                  </line>
+                  <g id="root-1">
+                   <rect class="actor" fill="#eaeaea" height="65" rx="3" ry="3" stroke="#666" width="150" x="200" y="0">
+                   </rect>
+                   <text alignment-baseline="central" class="actor" dominant-baseline="central" style='text-anchor: middle; font-size: 14px; font-weight: 400; font-family: Open-Sans, "sans-serif";' x="275" y="32.5">
+                    <tspan dy="0" x="275">
+                     Bob
+                    </tspan>
+                   </text>
+                  </g>
+                 </g>
+                 <g>
+                  <line class="200" id="actor2" stroke="#999" stroke-width="0.5px" x1="475" x2="475" y1="5" y2="502">
+                  </line>
+                  <g id="root-2">
+                   <rect class="actor" fill="#eaeaea" height="65" rx="3" ry="3" stroke="#666" width="150" x="400" y="0">
+                   </rect>
+                   <text alignment-baseline="central" class="actor" dominant-baseline="central" style='text-anchor: middle; font-size: 14px; font-weight: 400; font-family: Open-Sans, "sans-serif";' x="475" y="32.5">
+                    <tspan dy="0" x="475">
+                     John
+                    </tspan>
+                   </text>
+                  </g>
+                 </g>
+                 <defs>
+                  <marker id="arrowhead" markerheight="12" markerunits="userSpaceOnUse" markerwidth="12" orient="auto" refx="9" refy="5">
+                   <path d="M 0 0 L 10 5 L 0 10 z">
+                   </path>
+                  </marker>
+                 </defs>
+                 <defs>
+                  <marker id="crosshead" markerheight="8" markerwidth="15" orient="auto" refx="16" refy="4">
+                   <path d="M 9,2 V 6 L16,4 Z" fill="black" stroke="#000000" stroke-width="1px" style="stroke-dasharray: 0, 0;">
+                   </path>
+                   <path d="M 0,1 L 6,7 M 6,1 L 0,7" fill="none" stroke="#000000" stroke-width="1px" style="stroke-dasharray: 0, 0;">
+                   </path>
+                  </marker>
+                 </defs>
+                 <defs>
+                  <marker id="filled-head" markerheight="28" markerwidth="20" orient="auto" refx="18" refy="7">
+                   <path d="M 18,7 L9,13 L14,7 L9,1 Z">
+                   </path>
+                  </marker>
+                 </defs>
+                 <defs>
+                  <marker id="sequencenumber" markerheight="40" markerwidth="60" orient="auto" refx="15" refy="15">
+                   <circle cx="15" cy="15" r="6">
+                   </circle>
+                  </marker>
+                 </defs>
+                 <text alignment-baseline="middle" class="messageText" dominant-baseline="middle" dy="1em" style='font-family: "trebuchet ms", verdana, arial, sans-serif; font-size: 16px; font-weight: 400;' text-anchor="middle" x="275" y="80">
+                  Hello John, how are you?
+                 </text>
+                 <line class="messageLine0" marker-end="url(#arrowhead)" stroke="none" stroke-width="2" style="fill: none;" x1="75" x2="475" y1="109" y2="109">
+                 </line>
+                 <text alignment-baseline="middle" class="messageText" dominant-baseline="middle" dy="1em" style='font-family: "trebuchet ms", verdana, arial, sans-serif; font-size: 16px; font-weight: 400;' text-anchor="middle" x="475" y="169">
+                  Fight against hypochondria
+                 </text>
+                 <path class="messageLine0" d="M 475,198 C 535,188 535,228 475,218" marker-end="url(#arrowhead)" stroke="none" stroke-width="2" style="fill: none;">
+                 </path>
+                 <g>
+                  <line class="loopLine" x1="369" x2="581" y1="119" y2="119">
+                  </line>
+                  <line class="loopLine" x1="581" x2="581" y1="119" y2="268">
+                  </line>
+                  <line class="loopLine" x1="369" x2="581" y1="268" y2="268">
+                  </line>
+                  <line class="loopLine" x1="369" x2="369" y1="119" y2="268">
+                  </line>
+                  <polygon class="labelBox" points="369,119 419,119 419,132 410.6,139 369,139">
+                  </polygon>
+                  <text alignment-baseline="middle" class="labelText" dominant-baseline="middle" style='font-family: "trebuchet ms", verdana, arial, sans-serif; font-size: 16px; font-weight: 400;' text-anchor="middle" x="394" y="132">
+                   loop
+                  </text>
+                  <text class="loopText" style='font-family: "trebuchet ms", verdana, arial, sans-serif; font-size: 16px; font-weight: 400;' text-anchor="middle" x="500" y="137">
+                   <tspan x="500">
+                    [Healthcheck]
+                   </tspan>
+                  </text>
+                 </g>
+                 <g>
+                  <rect class="note" fill="#EDF2AE" height="52" rx="0" ry="0" stroke="#666" width="150" x="500" y="278">
+                  </rect>
+                  <text alignment-baseline="middle" class="noteText" dominant-baseline="middle" dy="1em" style='font-family: "trebuchet ms", verdana, arial, sans-serif; font-size: 14px; font-weight: 400;' text-anchor="middle" x="575" y="283">
+                   <tspan x="575">
+                    Rational thoughts
+                   </tspan>
+                  </text>
+                  <text alignment-baseline="middle" class="noteText" dominant-baseline="middle" dy="1em" style='font-family: "trebuchet ms", verdana, arial, sans-serif; font-size: 14px; font-weight: 400;' text-anchor="middle" x="575" y="299">
+                   <tspan x="575">
+                    prevail!
+                   </tspan>
+                  </text>
+                 </g>
+                 <text alignment-baseline="middle" class="messageText" dominant-baseline="middle" dy="1em" style='font-family: "trebuchet ms", verdana, arial, sans-serif; font-size: 16px; font-weight: 400;' text-anchor="middle" x="275" y="345">
+                  Great!
+                 </text>
+                 <line class="messageLine1" marker-end="url(#arrowhead)" stroke="none" stroke-width="2" style="stroke-dasharray: 3, 3; fill: none;" x1="475" x2="75" y1="374" y2="374">
+                 </line>
+                 <text alignment-baseline="middle" class="messageText" dominant-baseline="middle" dy="1em" style='font-family: "trebuchet ms", verdana, arial, sans-serif; font-size: 16px; font-weight: 400;' text-anchor="middle" x="375" y="389">
+                  How about you?
+                 </text>
+                 <line class="messageLine0" marker-end="url(#arrowhead)" stroke="none" stroke-width="2" style="fill: none;" x1="475" x2="275" y1="418" y2="418">
+                 </line>
+                 <text alignment-baseline="middle" class="messageText" dominant-baseline="middle" dy="1em" style='font-family: "trebuchet ms", verdana, arial, sans-serif; font-size: 16px; font-weight: 400;' text-anchor="middle" x="375" y="433">
+                  Jolly good!
+                 </text>
+                 <line class="messageLine1" marker-end="url(#arrowhead)" stroke="none" stroke-width="2" style="stroke-dasharray: 3, 3; fill: none;" x1="275" x2="475" y1="462" y2="462">
+                 </line>
+                 <g>
+                  <rect class="actor" fill="#eaeaea" height="65" rx="3" ry="3" stroke="#666" width="150" x="0" y="482">
+                  </rect>
+                  <text alignment-baseline="central" class="actor" dominant-baseline="central" style='text-anchor: middle; font-size: 14px; font-weight: 400; font-family: Open-Sans, "sans-serif";' x="75" y="514.5">
+                   <tspan dy="0" x="75">
+                    Alice
+                   </tspan>
+                  </text>
+                 </g>
+                 <g>
+                  <rect class="actor" fill="#eaeaea" height="65" rx="3" ry="3" stroke="#666" width="150" x="200" y="482">
+                  </rect>
+                  <text alignment-baseline="central" class="actor" dominant-baseline="central" style='text-anchor: middle; font-size: 14px; font-weight: 400; font-family: Open-Sans, "sans-serif";' x="275" y="514.5">
+                   <tspan dy="0" x="275">
+                    Bob
+                   </tspan>
+                  </text>
+                 </g>
+                 <g>
+                  <rect class="actor" fill="#eaeaea" height="65" rx="3" ry="3" stroke="#666" width="150" x="400" y="482">
+                  </rect>
+                  <text alignment-baseline="central" class="actor" dominant-baseline="central" style='text-anchor: middle; font-size: 14px; font-weight: 400; font-family: Open-Sans, "sans-serif";' x="475" y="514.5">
+                   <tspan dy="0" x="475">
+                    John
+                   </tspan>
+                  </text>
+                 </g>
+                </svg>
+               </div>
+               
+         <strong>
+          Gantt diagram:
+         </strong>
+        </p>
+        <div align="center" class="mermaid" style="background-color:none;border-radius:5px">
+         gantt
+dateFormat YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+section A section
+Completed task :done, des1, 2014-01-06,2014-01-08
+Active task :active, des2, 2014-01-09, 3d
+Future task : des3, after des2, 5d
+Future task2 : des4, after des3, 5d
+        </div>
+        <p>
+         <strong>
+          Class Diagram:
+         </strong>
+        </p>
+        <div align="center" class="mermaid" style="background-color:none;border-radius:5px">
+         classDiagram
+Class01 &lt;|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --&gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 &lt;--&gt; C2: Cool label
+        </div>
+        <p>
+         <strong>
+          Git Graph:
+         </strong>
+        </p>
+        <div align="right" class="mermaid" style="background-color:#000;border-radius:5px">
+         gitGraph:
+options
+{
+"nodeSpacing": 150,
+"nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
+        </div>
+        <p>
+         <strong>
+          ER Diagram:
+         </strong>
+        </p>
+        <div align="center" class="mermaid" style="background-color:none;border-radius:5px">
+         erDiagram
+CUSTOMER ||--o{ ORDER : places
+ORDER ||--|{ LINE-ITEM : contains
+CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+        </div>
+       </div>
+       <div class="row pl-3 pr-3">
+        <div class="col-md-6 share-buttons">
+         <strong>
+          Share on:
+         </strong>
+         <a class="btn btn-sm facebook-btn" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fhugo-toha.github.io%2fposts%2fshortcodes%2f" target="_blank">
+          <i class="fab fa-facebook">
+          </i>
+         </a>
+         <a class="btn btn-sm twitter-btn" href="https://twitter.com/share?url=https%3a%2f%2fhugo-toha.github.io%2fposts%2fshortcodes%2f&amp;text=Shortcodes%20Samples&amp;via=John%27s%20Blog" target="_blank">
+          <i class="fab fa-twitter">
+          </i>
+         </a>
+         <a class="btn btn-sm reddit-btn" href="https://reddit.com/submit?url=https%3a%2f%2fhugo-toha.github.io%2fposts%2fshortcodes%2f&amp;title=Shortcodes%20Samples" target="_blank">
+          <i class="fab fa-reddit">
+          </i>
+         </a>
+         <a class="btn btn-sm linkedin-btn" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fhugo-toha.github.io%2fposts%2fshortcodes%2f&amp;title=Shortcodes%20Samples" target="_blank">
+          <i class="fab fa-linkedin">
+          </i>
+         </a>
+         <a class="btn btn-sm whatsapp-btn" href="https://api.whatsapp.com/send?text=Shortcodes%20Samples https%3a%2f%2fhugo-toha.github.io%2fposts%2fshortcodes%2f" target="_blank">
+          <i class="fab fa-whatsapp">
+          </i>
+         </a>
+         <a class="btn btn-sm email-btn" href="mailto:?subject=Shortcodes%20Samples&amp;body=https%3a%2f%2fhugo-toha.github.io%2fposts%2fshortcodes%2f" target="_blank">
+          <i class="fas fa-envelope-open-text">
+          </i>
+         </a>
+        </div>
+        <div class="col-md-6 btn-improve-page">
+         <a href="https://github.com/hugo-toha/hugo-toha.github.io/edit/source/content/posts/shortcodes/index.md" rel="noopener" target="_blank" title="Improve this page">
+          <i class="fas fa-code-branch">
+          </i>
+          Improve this page
+         </a>
+        </div>
+       </div>
+       <hr/>
+       <div class="row next-prev-navigator">
+        <div class="col-md-6 previous-article">
+         <a class="btn btn-outline-info" href="/posts/markdown-sample/" title="Markdown Samples">
+          <div>
+           <i class="fas fa-chevron-circle-left">
+           </i>
+           Prev
+          </div>
+          <div class="next-prev-text">
+           Markdown Samples
+          </div>
+         </a>
+        </div>
+       </div>
+       <hr/>
+      </div>
+     </div>
+    </div>
+    <a class="btn" id="scroll-to-top">
+     <i class="fas fa-chevron-circle-up">
+     </i>
+    </a>
+    <div class="dropdown languageSelector">
+     <a aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle" data-toggle="dropdown" href="#" id="languageSelector" role="button">
+      <span class="flag-icon flag-icon-gb">
+      </span>
+      English
+     </a>
+     <div aria-labelledby="languageSelector" class="dropdown-menu">
+      <a class="dropdown-item nav-link languages-item" href="/bn/posts/shortcodes">
+       <span class="flag-icon flag-icon-bd">
+       </span>
+       PortuguÊs
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="toc-section" id="toc-section">
+    <div class="toc-holder">
+     <h5 class="text-center pl-3">
+      Conteúdos
+     </h5>
+     <hr/>
+     <div class="toc">
+      <nav id="TableOfContents">
+       <ul>
+        <li>
+         <a href="#alert">
+          Alert
+         </a>
+        </li>
+        <li>
+         <a href="#image">
+          Image
+         </a>
+         <ul>
+          <li>
+           <ul>
+            <li>
+             <a href="#a-sample-image-without-any-attribute">
+              A sample image without any attribute.
+             </a>
+            </li>
+            <li>
+             <a href="#a-sample-image-with-height-and-width-attributes">
+              A sample image with
+              <code>
+               height
+              </code>
+              and
+              <code>
+               width
+              </code>
+              attributes.
+             </a>
+            </li>
+            <li>
+             <a href="#a-center-aligned-image-with-height-and-width-attributes">
+              A center aligned image with
+              <code>
+               height
+              </code>
+              and
+              <code>
+               width
+              </code>
+              attributes.
+             </a>
+            </li>
+            <li>
+             <a href="#a-image-with-float-attribute">
+              A image with
+              <code>
+               float
+              </code>
+              attribute.
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#split">
+          Split
+         </a>
+         <ul>
+          <li>
+           <ul>
+            <li>
+             <a href="#two-column-split">
+              Two column split
+             </a>
+            </li>
+            <li>
+             <a href="#three-column-split">
+              Three column split
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#vertical-space">
+          Vertical Space
+         </a>
+        </li>
+        <li>
+         <a href="#video">
+          Video
+         </a>
+        </li>
+        <li>
+         <a href="#mermaid">
+          Mermaid
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+    </div>
+   </section>
+  </div>
+  <!-- RODAPÉ -->
+  <footer class="container-fluid text-center align-content-center footer pb-2" id="footer">
+   <div class="container pt-5">
+    <div class="row text-left">
+     <div class="col-md-4 col-sm-12">
+      <h5>
+       Navegação
+      </h5>
+      <ul>
+       <li class="nav-item">
+        <a class="smooth-scroll" href="https://hugo-toha.github.io#about">
+         Sobre
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="smooth-scroll" href="https://hugo-toha.github.io#skills">
+         Habilidades
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="smooth-scroll" href="https://hugo-toha.github.io#experiences">
+         Experiências
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="smooth-scroll" href="https://hugo-toha.github.io#education">
+         Educação
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="smooth-scroll" href="https://hugo-toha.github.io#projects">
+         Projetos
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="smooth-scroll" href="https://hugo-toha.github.io#recent-posts">
+         Postagens Recentes
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="smooth-scroll" href="https://hugo-toha.github.io#accomplishments">
+         Cursos
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="smooth-scroll" href="https://hugo-toha.github.io#achievements">
+         Conquistas
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-md-4 col-sm-12">
+      <h5>
+       Contate-me:
+      </h5>
+      <ul>
+       <li>
+        <a href="mailto:mateuscoimbra0056@hotmail.com" rel="noopener" target="_blank">
+         <span>
+          <i class="fas fa-envelope">
+          </i>
+         </span>
+         <span>
+          mateuscoimbra0056@hotmail.com
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/johndoe" rel="noopener" target="_blank">
+         <span>
+          <i class="fab fa-github">
+          </i>
+         </span>
+         <span>
+          mateuscoimbra56
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="https://www.linkedin.com/in/johndoe" rel="noopener" target="_blank">
+         <span>
+          <i class="fab fa-linkedin">
+          </i>
+         </span>
+         <span>
+          Mateus Coimbra da Silva
+         </span>
+        </a>
+       </li>
+       <li>
+        <span>
+         <i class="fas fa-phone-alt">
+         </i>
+        </span>
+        <span>
+         (32)98702-0664
+        </span>
+       </li>
+      </ul>
+     </div>
+     <div class="col-md-4 col-sm-12">
+      <p>
+       Fique atualizado com notificações por email
+      </p>
+      <form action="https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;amp;id=094a24c76e" class="validate" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+       <div class="form-group">
+        <input aria-describedby="emailHelp" class="form-control" id="mce-EMAIL" name="EMAIL" placeholder="Enter email" type="email"/>
+        <small class="form-text text-muted" id="emailHelp">
+         By entering your email address, you agree to receive the newsletter of this website.
+        </small>
+       </div>
+       <button class="btn btn-info" type="submit">
+        Inscrever-se
+       </button>
+      </form>
+     </div>
+     <script src="/js/jquery-3.4.1.min.js" type="text/javascript">
+     </script>
+     <script src="/js/popper.min.js" type="text/javascript">
+     </script>
+     <script src="/js/bootstrap.min.js" type="text/javascript">
+     </script>
+     <script src="/js/navbar.js" type="text/javascript">
+     </script>
+     <script src="/js/plyr.js" type="text/javascript">
+     </script>
+     <script src="/js/main.js" type="text/javascript">
+     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js">
+     </script>
+     <script src="/js/single.js">
+     </script>
+     <script>
+      hljs.initHighlightingOnLoad()
+     </script>
+     <script src="/js/mermaid-8.14.0.min.js">
+     </script>
+     <script>
+      mermaid.initialize({startOnLoad:!0})
+     </script>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
