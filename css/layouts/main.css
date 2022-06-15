@@ -133,6 +133,11 @@ img.right {
   height: 32px;
 }
 
+
+.card-badge{
+  width: 100px;
+  height:100px;
+}
 .card-img-xs {
   width: 24px;
   height: 24px;
@@ -178,36 +183,38 @@ img.right {
 }
 
 /* ====== codeblocks ====== */
-table {
+/* table {
   border-radius: 0.1rem;
   background: #e5e9f2;
   border: 1px solid #c0ccda;
   padding: 0.1rem;
 }
 
+
+
 table tr {
   height: 40px !important;
-}
+} */
 
 table th,
 td {
-  padding: 0.5rem;
-  border-left: 1px solid #8392a5;
-  border-bottom: 1px solid #8392a5;
+  padding: 0.8rem;
+  /* border-left: 1px solid #8392a5;
+  border-bottom: 1px solid #8392a5; */
 }
 
-table thead tr {
+/* table thead tr {
   background: #248aaa;
   color: #e5e9f2;
-}
-
+} */
+/* 
 tbody tr:nth-child(odd) {
   background-color: #e5e9f2;
 }
 
 tbody tr:hover {
   background: #c0ccda;
-}
+} */
 
 figure {
   border: 1px solid #c0ccda;
