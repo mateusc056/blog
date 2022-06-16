@@ -138,6 +138,8 @@ img.right {
   width: 100px;
   height:100px;
 }
+
+
 .card-img-xs {
   width: 24px;
   height: 24px;
@@ -168,7 +170,7 @@ img.right {
 }
 
 .card-body {
-  text-align: justify;
+  text-align: left;
 }
 
 .sub-title {
@@ -471,4 +473,8 @@ mark {
 
 svg{
   background-color: #4d4d4d;
+}
+
+.selected{
+  background-color: #248aaa;
 }
